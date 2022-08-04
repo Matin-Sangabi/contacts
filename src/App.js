@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {Routes , Route} from "react-router-dom";
+import EditContacts from "./components/EditContact/EditContacts";
+import AddNewContact from "./pages/AddContact/AddNewContacts";
+import HomePage from "./pages/HomePage/HomePage";
+const App = () => {
+    return ( 
+        <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/add-contact" element={<AddNewContact/>}/>
+            <Route path="/edit/:id" element={<EditContacts/>}/>
+        </Routes>
+     );
 }
-
+ 
 export default App;

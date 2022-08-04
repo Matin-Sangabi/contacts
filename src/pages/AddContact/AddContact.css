@@ -1,0 +1,53 @@
+.add-contact{
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    align-items: center;
+    padding: 1rem;
+}
+.add-contact input , .add-contact select {
+    padding: 0.5rem;
+    border: none;
+    outline: 1px solid #94a3b8;
+    border-radius: 5px;
+}
+.add-contact input:focus , .add-contact select:focus{
+    outline: 2px solid #7c3aed;
+    outline-offset: 2px;
+}
+.add input{
+    width: 420px;
+}
+.add-email{
+    display: flex;
+    gap: 1rem;
+}
+.add-email input{
+    width: 200px;
+}
+.add-label{
+    width: 420px;
+}
+.add-label select{
+    width: 100%;
+}
+
+.add-btn{
+    padding: 0.5rem;
+    width: 200px;
+    outline: none;
+    border: none;
+    background-color: #7c3aed;
+    color: #f8fafc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-btn:focus{
+    outline: 2px solid #7c3aed;
+    outline-offset: 2px;
+}
