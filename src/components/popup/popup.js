@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./popup.css";
 const Popup = ({ onDelete, contact }) => {
-  console.log(contact);
   return (
     <div className="popup">
       <div>{contact.label}</div>
